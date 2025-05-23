@@ -75,4 +75,5 @@ jobs:
             --build-arg=NODE_VERSION=${{ inputs.nodejs-version || env.NODEJS_VERSION }}
             --build-arg=APPS_JSON_BASE64=${{ inputs.apps-json-base64 || env.APPS_JSON_BASE64 }}
             --context=${{ inputs.context || env.CONTEXT }}
+            --no-push
           file: ${{ inputs.dockerfile || env.DOCKERFILE }}
