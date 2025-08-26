@@ -3,7 +3,7 @@ name: Build Image
 on:
   push:
     branches:
-      - lensex
+      - lenslumi-ind-15
 
   workflow_dispatch:
     inputs:
