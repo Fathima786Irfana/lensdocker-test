@@ -45,17 +45,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Free disk space
-        run: |
-          echo "Before cleanup:"
-          df -h
-          sudo rm -rf /usr/share/dotnet
-          sudo rm -rf /opt/ghc
-          sudo rm -rf /usr/local/lib/android
-          docker system prune -af || true
-          echo "After cleanup:"
-          df -h
-
       - name: Source Build Env
         id: source-build-env
         run: |
@@ -65,8 +54,8 @@ jobs:
 
       - uses: int128/kaniko-action@v1
         with:
-          push: false
-          cache: false
+          push: true
+          cache: true
           kaniko-args: |
             --build-arg=FRAPPE_PATH=${{ inputs.frappe-repo || env.FRAPPE_REPO }}
             --build-arg=FRAPPE_BRANCH=${{ inputs.frappe-version || env.FRAPPE_VERSION }}

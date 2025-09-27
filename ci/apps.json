@@ -1,38 +1,30 @@
 [
   {
     "url": "https://github.com/frappe/erpnext.git",
-    "branch": "v15.76.0"
-  },
-  {
-    "url": "https://github.com/frappe/insights.git",
-    "branch": "v3.2.9"
-  }, 
-  {
-    "url": "https://github.com/lmnaslimited/cpq.git",
-    "branch": "demo-upgrade"
-  },
-  {
-    "url": "https://github.com/shridarpatil/frappe_whatsapp.git",
-    "branch": "v1.0.10"
-  },
-  {
-    "url": "https://github.com/frappe/helpdesk.git",
-    "branch": "v1.14.0"
-  },
-  {
-    "url": "https://github.com/The-Commit-Company/raven",
-    "branch": "v2.6.2"
-  },
-  {
-    "url": "https://github.com/lmnaslimited/lens_pdf-on-submit.git",
-    "branch": "workflow-v1"
+    "branch": "v15.48.3"
   },
   {
     "url": "https://github.com/frappe/payments.git",
     "branch": "version-15"
+  }, 
+  {
+    "url": "https://github.com/frappe/hrms.git",
+    "branch": "v15.38.0"
   },
   {
-    "url": "https://github.com/frappe/webshop.git",
-    "branch": "version-15"
+    "url": "https://github.com/frappe/lms.git",
+    "branch": "v2.20.0"
+  },
+  {
+    "url": "https://github.com/resilient-tech/india-compliance.git",
+    "branch": "v15.15.0"
+  },
+  {
+    "url": "https://github.com/frappe/insights.git",
+    "branch": "v3.0.15"
+  },
+  {
+    "url": "https://github.com/The-Commit-Company/raven",
+    "branch": "v2.0.0"
   }
 ]
