@@ -64,5 +64,4 @@ jobs:
             --build-arg=APPS_JSON_BASE64=${{ inputs.apps-json-base64 || env.APPS_JSON_BASE64 }}
             --context=${{ inputs.context || env.CONTEXT }}
             --no-push
-            --cache=true
           file: ${{ inputs.dockerfile || env.DOCKERFILE }}
