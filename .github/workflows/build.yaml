@@ -54,7 +54,7 @@ jobs:
 
       - uses: int128/kaniko-action@v1
         with:
-          push: true
+          push: false
           cache: true
           kaniko-args: |
             --build-arg=FRAPPE_PATH=${{ inputs.frappe-repo || env.FRAPPE_REPO }}
@@ -64,5 +64,5 @@ jobs:
             --build-arg=APPS_JSON_BASE64=${{ inputs.apps-json-base64 || env.APPS_JSON_BASE64 }}
             --context=${{ inputs.context || env.CONTEXT }}
             --no-push
-            --cache=false
+            --cache=true
           file: ${{ inputs.dockerfile || env.DOCKERFILE }}
