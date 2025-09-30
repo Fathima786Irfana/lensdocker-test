@@ -18,5 +18,13 @@
   {
     "url": "https://github.com/resilient-tech/india-compliance.git",
     "branch": "v15.16.2"
+  },
+  {
+    "url": "https://github.com/frappe/insights.git",
+    "branch": "v3.0.17"
+  },
+  {
+    "url": "https://github.com/The-Commit-Company/raven",
+    "branch": "v2.0.5"
   }
 ]
